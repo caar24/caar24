@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context-Aware Action Recognition: Introducing a Comprehensive Dataset for Behavior Contrast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .section {
+            padding: 2rem 0;
+        }
+        .features, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .features div, .gallery div {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background: #f4f4f4;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .gallery div {
+            flex-basis: calc(33.333% - 20px); /* 1/3 width minus margin */
+            max-width: calc(33.333% - 20px); /* Ensure max-width matches flex-basis */
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 75%; /* Set to 25% for 1/4 width */
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Context-Aware Action Recognition: Introducing a Comprehensive Dataset for Behavior Contrast</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Home</h2>
+            <p>Welcome to the project page! This page provides detailed information about our dataset and its examples.</p>
+        </section>
+
+        <section id="news" class="section">
+            <h2>News</h2>
+            <ul>
+                <li>2024.07 - Introduction image released.</li>
+                <li>2024.03 - Dataset now available for download.</li>
+            </ul>
+        </section>
+
+        <section id="features" class="section">
+            <h2>Features</h2>
+            <div class="features">
+                <div>
+                    <h3>Multiviews and Multi devices</h3>
+                    <p>FixedCamera with multiview, Drone with Camera, GoPro. The fixed cameras are firming from four directions.</p>
+                </div>
+                <div>
+                    <h3>2.1K Videos and 1.0M Frames</h3>
+                    <p>Untrimmed videos with 3840x2160@30FPS. Annotate proper/improper actions for each video.</p>
+                </div>
+                <div>
+                    <h3>Pairs of proper and improper actions</h3>
+                    <p>For instance: Proper and improper use of the harness (attach it or not) when using an electric lift.</p>
+                </div>
+                <div>
+                    <h3>Industrial and everyday acitons</h3>
+                    <p>Industrial Actions such as height working with electrical lift, working with stepladder, suspended load etc.</p>
+                </div>
+                <div>
+                    <h3>Indoor and Outdoors</h3>
+                    <p>Filmed on the grounds and in the gymnasium, there are a wide variety of background and variations in lighting conditions.</p>
+                    
+                </div>
+                <div>
+                    <h3>9 Actors</h3>
+                    <p>For work at height or stepladder, attire is work clothes and helmets. For everyday scenes such as sports, a variety of attire.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <div>
+                    <h3>Working at height. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/height_n_2.jpg?raw=true" alt="A fixed camera captures work at height using an electric lift. The worker is trying to put on the safety gear.">
+                    <p>A worker putting on a harness. Proper use of harness.</p>
+                </div>
+                <div>
+                    <h3>Working at height. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/height_n_3.jpg?raw=true" alt="A fixed camera captures work at high altitude using an electric lift. The worker ascends using the lift.">
+                    <p> Ascending with a lift.</p>
+                </div>
+                <div>
+                    <h3>Working at height. Drone.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/drone_att.png?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>A bird's-eye view of the moment a worker puts on a harness.</p>
+                </div>
+
+                <div>
+                    <h3>Working at height. GoPro.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/left_att.png?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>A worker putting on a harness.</p>
+                </div>
+                <div>
+                    <h3>Working at height. GoPro.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/right_att.png?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p> A worker putting on a harness. Another Case.</p>
+                </div>
+                <div>
+                    <h3>Working on a stepladder. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/lad_ab_2.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p> The worker is straddling the stepladder, which is an improper way.</p>
+                </div>
+                
+                <div>
+                    <h3>Basketball. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/sports_ab_1.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>Actors beginning to make excessive contact.</p>
+                </div>
+                <div>
+                    <h3>Basketball. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/sports_ab_2.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>Actors making excessive contact.</p>
+                </div>
+                <div>
+                    <h3>Basketball. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/sports_ab_3.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>Actors making excessive contact. Another Frame.</p>
+                </div>
+
+                <div>
+                    <h3>Working with a suspended load. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/sus_ab_1.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>The worker approaches the load.</p>
+                </div>
+                <div>
+                    <h3>Working with a suspended load. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/sus_ab_2.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>The worker approaches the load. Another Frame.</p>
+                </div>
+                <div>
+                    <h3>Working with a suspended load. Fixed camera.</h3>
+                    <img src="https://github.com/sasakitsh/caar24/blob/main/prj_images/sus_ab_3.jpg?raw=true" alt="Work at height using an electric lift filmed with a drone camera">
+                    <p>The worker is touching the suspended load.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="downloads" class="section">
+            <h2>Downloads</h2>
+            
+            <p>Dataset publicly available for research purposes. For details, please see the terms of use at the bottom of the page.</p>
+            <p>Please send an email to tatsuya.sasaki.gb@hitachi.com or sasakirct@gmail.com for request access right.</p>
+            <p>For the entire dataset with annotations, please follow this link after getting access right. <a href="https://ent.box.com/s/svfjbrhnf3e6h25ieuu9tlidynmw91cx">link</a> </p>
+
+            <h3>Terms of Use</h3>
+            <ol>
+                <li>The usage of this dataset is limited to academic research ONLY.</li>
+                <li>Disclosure is only allowed for demonstration in academic publications and presentations.</li>
+                <li>Any distribution of this dataset is prohibited.</li>
+                <li>Any commercial usage of this dataset is prohibited.</li>
+                <li>Violation of terms will result in cancellation of the usage license.</li>
+            </ol>
+
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Context-Aware Action Recognition: Introducing a Comprehensive Dataset for Behavior Contrast. All rights reserved.</p>
+    </footer>
+</body>
+</html>
